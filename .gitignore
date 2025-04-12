@@ -1,0 +1,7 @@
+*.vsidx
+*.wsuo
+*.json
+*.bin
+*.cache
+*.cs
+*.editorconfig
