@@ -1,0 +1,213 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  
+  .logo-text {
+    background: linear-gradient(135deg, #8a2be2, #ff69b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Auth buttons */
+  .auth-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .login-btn {
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #000;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .signup-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background: linear-gradient(135deg, #8a2be2, #ff69b4);
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .signup-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Welcome content */
+  .welcome-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: calc(100vh - 90px);
+  }
+  
+  .hero-section {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    background: linear-gradient(135deg, #8a2be2, #ff69b4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .primary-btn {
+    padding: 0.8rem 1.8rem;
+    border: none;
+    background: linear-gradient(135deg, #8a2be2, #ff69b4);
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+  }
+  
+  .secondary-btn {
+    padding: 0.8rem 1.8rem;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Hero image */
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-placeholder {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gradient-circle {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(255, 105, 180, 0.2));
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gradient-circle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(135deg, #8a2be2, #ff69b4);
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .welcome-content {
+      flex-direction: column;
+      padding: 2rem 1rem;
+    }
+  
+    .hero-section {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .cta-buttons {
+      justify-content: center;
+    }
+  
+    .image-placeholder {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .gradient-circle {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  

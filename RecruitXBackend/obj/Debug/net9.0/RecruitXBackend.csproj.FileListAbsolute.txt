@@ -1,0 +1,8 @@
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.csproj.AssemblyReference.cache
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.AssemblyInfoInputs.cache
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.AssemblyInfo.cs
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.csproj.CoreCompileInputs.cache
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.MvcApplicationPartsAssemblyInfo.cs
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.MvcApplicationPartsAssemblyInfo.cache
+D:\RecruitX2.0\RecruitX\RecruitXBackend\obj\Debug\net9.0\RecruitXBackend.sourcelink.json

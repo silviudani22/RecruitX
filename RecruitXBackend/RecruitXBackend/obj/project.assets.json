@@ -5158,23 +5158,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Silviu\\.nuget\\packages\\": {},
+    "C:\\Users\\Darius\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
+      "projectUniqueName": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
       "projectName": "RecruitXBackend",
-      "projectPath": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
-      "packagesPath": "C:\\Users\\Silviu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\obj\\",
+      "projectPath": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
+      "packagesPath": "C:\\Users\\Darius\\.nuget\\packages\\",
+      "outputPath": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Silviu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Darius\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
