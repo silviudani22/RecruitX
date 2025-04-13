@@ -1,3 +1,4 @@
 *.vsidx
 *.json
 recruitxfront/.vs/recruitxfront/v17/.wsuo
+recruitxfront/.vs/recruitxfront/config/applicationhost.config
