@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './LoginRegister.css';
+import '../styles/LoginRegister.css';
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
+//C: \Csharp\RecruitX Repo\RecruitX\recruitxfront\src\styles\LoginRegister.css
 
 //<div> -> bloc generic utilizat pt layout organization si content grouping
 //<a> -> creeaza hyperlinkuri catre alte pagini

@@ -1,5 +1,6 @@
 import React from 'react'
-import LoginRegister from './Components/LoginRegister/LoginRegister';
+import LoginRegister from './pages/LoginRegister';
+
 
 function App() {
   return (
