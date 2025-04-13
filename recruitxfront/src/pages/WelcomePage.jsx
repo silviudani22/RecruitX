@@ -1,6 +1,8 @@
+"use client"
+
 import "../styles/WelcomePage.css"
 
-function WelcomePage() {
+function WelcomePage({ onLoginClick, onSignupClick, onGetStartedClick }) {
   return (
     <div className="welcome-page">
       <nav className="navbar">
@@ -10,8 +12,12 @@ function WelcomePage() {
           </div>
         </div>
         <div className="auth-buttons">
-          <button className="login-btn">Log In</button>
-          <button className="signup-btn">Sign Up</button>
+          <button className="login-btn" onClick={onLoginClick}>
+            Log In
+          </button>
+          <button className="signup-btn" onClick={onSignupClick}>
+            Sign Up
+          </button>
         </div>
       </nav>
 
@@ -22,7 +28,9 @@ function WelcomePage() {
           </h1>
           <p className="subtitle">The next generation recruitment platform</p>
           <div className="cta-buttons">
-            <button className="primary-btn">Get Started</button>
+            <button className="primary-btn" onClick={onGetStartedClick}>
+              Get Started
+            </button>
             <button className="secondary-btn">Learn More</button>
           </div>
         </div>
