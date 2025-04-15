@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecruitXBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e552bc9f82038f77bfa161fb8382f5469e91e2c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+879d8d02ec200eb6e2bec41ec61616299472974f")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecruitXBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecruitXBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

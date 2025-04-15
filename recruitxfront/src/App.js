@@ -14,7 +14,7 @@ function App() {
     setCurrentPage(page)
   }
 
-  // Update WelcomePage.jsx to use these navigation functions
+  
   const renderPage = () => {
     switch (currentPage) {
       case "login":
