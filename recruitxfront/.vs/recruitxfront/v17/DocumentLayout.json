@@ -1,5 +1,6 @@
 {
   "Version": 1,
+
   "WorkspaceRootPath": "D:\\RecruitX2.0\\RecruitX\\recruitxfront\\",
   "Documents": [
     {
@@ -61,6 +62,7 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-12T13:40:08.104Z",
               "EditorCaption": ""
+
             },
             {
               "$type": "Document",
@@ -73,6 +75,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-12T13:38:32.14Z",
+
               "EditorCaption": ""
             }
           ]
