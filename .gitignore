@@ -1,3 +1,8 @@
 *.vsidx
+*.wsuo
 *.json
+*.bin
+*.cache
+*.cs
+*.editorconfig
 recruitxfront/.vs/recruitxfront/v17/.wsuo

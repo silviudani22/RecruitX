@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+"use client"
+
+import { useState } from "react"
+import WelcomePage from "./pages/WelcomePage"
+import Login from "./pages/Login"
+import SignUp from "./pages/SignUp"
+import "./App.css"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [currentPage, setCurrentPage] = useState("welcome")
+
+  // Simple routing function
+  const navigate = (page) => {
+    setCurrentPage(page)
+  }
+
+  
+  const renderPage = () => {
+    switch (currentPage) {
+      case "login":
+        return <Login onBackClick={() => navigate("welcome")} onSignUpClick={() => navigate("signup")} />
+      case "signup":
+        return <SignUp onBackClick={() => navigate("welcome")} onLoginClick={() => navigate("login")} />
+      default:
+        return (
+          <WelcomePage
+            onLoginClick={() => navigate("login")}
+            onSignupClick={() => navigate("signup")}
+            onGetStartedClick={() => navigate("signup")}
+          />
+        )
+    }
+  }
+
+  return <div className="App">{renderPage()}</div>
 }
 
-export default App;
+export default App

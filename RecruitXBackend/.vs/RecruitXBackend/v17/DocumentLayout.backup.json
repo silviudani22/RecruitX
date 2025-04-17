@@ -1,38 +1,50 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\",
+  "WorkspaceRootPath": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\listedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\listedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\recruitxbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\recruitxbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\migrations\\20250409164700_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\migrations\\20250409164700_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\migrations\\20250409164700_initial migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\data\\recruitx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\data\\recruitx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\listedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\listedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\jobapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\proiect informatica industriala\\recruitx\\recruitx\\recruitxbackend\\recruitxbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|d:\\recruitx2.0\\recruitx\\recruitxbackend\\recruitxbackend\\data\\recruitx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\data\\recruitx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,11 +60,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Users.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Users.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Models\\Domain\\Users.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Users.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Users.cs",
               "RelativeToolTip": "RecruitXBackend\\Models\\Domain\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T15:26:00.959Z",
               "IsPinned": true,
@@ -60,45 +72,63 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ListedJob.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Models\\Domain\\ListedJob.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
               "RelativeToolTip": "RecruitXBackend\\Models\\Domain\\ListedJob.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T15:26:29.632Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "JobApplication.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\JobApplication.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\JobApplication.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Models\\Domain\\JobApplication.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\JobApplication.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\JobApplication.cs",
               "RelativeToolTip": "RecruitXBackend\\Models\\Domain\\JobApplication.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T16:27:43.805Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Company.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Company.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Company.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Models\\Domain\\Company.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Company.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Company.cs",
               "RelativeToolTip": "RecruitXBackend\\Models\\Domain\\Company.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-09T15:26:08.976Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "RecruitXBackend\\appsettings.Development.json",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.Development.json",
+              "RelativeToolTip": "RecruitXBackend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T18:02:21.13Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
               "$type": "Bookmark",
@@ -106,23 +136,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250409164700_Initial Migration.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
-              "RelativeToolTip": "RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T16:47:01.081Z"
+              "DocumentIndex": 1,
+              "Title": "RecruitXBackend.csproj",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
+              "RelativeDocumentMoniker": "RecruitXBackend\\RecruitXBackend.csproj",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
+              "RelativeToolTip": "RecruitXBackend\\RecruitXBackend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-10T17:25:41.819Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "RecruitXBackend\\appsettings.json",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.json",
+              "RelativeToolTip": "RecruitXBackend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-10T17:26:46.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250409164700_Initial Migration.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
+              "RelativeDocumentMoniker": "RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
+              "RelativeToolTip": "RecruitXBackend\\Migrations\\20250409164700_Initial Migration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T16:47:01.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Program.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Program.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Program.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Program.cs",
               "RelativeToolTip": "RecruitXBackend\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -130,11 +187,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\UserController.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\UserController.cs",
               "RelativeToolTip": "RecruitXBackend\\Controllers\\UserController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -142,11 +199,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "RecruitX.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitX.cs",
+              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitX.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Data\\RecruitX.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\Proiect Informatica Industriala\\RecruitX\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitX.cs",
+              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitX.cs",
               "RelativeToolTip": "RecruitXBackend\\Data\\RecruitX.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
