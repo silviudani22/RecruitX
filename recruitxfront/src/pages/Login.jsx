@@ -35,8 +35,8 @@ function Login() {
           <div className="auth-form">
             <form className="login-form">
               <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required />
+                <label htmlFor="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required />
               </div>
               <div className="form-group">
                 <label htmlFor="password">Password</label>

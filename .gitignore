@@ -6,3 +6,6 @@
 *.cs
 *.editorconfig
 recruitxfront/.vs/recruitxfront/v17/.wsuo
+RecruitXBackend/.vs/RecruitXBackend/config/applicationhost.config
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/RecruitXBackend.csproj.BuildWithSkipAnalyzers
+recruitxfront/.vs/recruitxfront/config/applicationhost.config
