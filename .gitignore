@@ -1,8 +1,14 @@
 *.vsidx
 *.wsuo
 *.json
+<<<<<<< HEAD
 *.bin
 *.cache
 *.cs
 *.editorconfig
 recruitxfront/.vs/recruitxfront/v17/.wsuo
+=======
+*.BuildWithSkipAnalyzers
+*.cache
+*.wsuo
+>>>>>>> 7550650686476b91b38ffeb1b3df86a8ce03b336
