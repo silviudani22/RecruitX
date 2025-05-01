@@ -1,11 +1,20 @@
 *.vsidx
 *.wsuo
 *.json
+<<<<<<< HEAD
 *.bin
 *.cache
 *.cs
 *.editorconfig
 recruitxfront/.vs/recruitxfront/v17/.wsuo
+<<<<<<< HEAD
 RecruitXBackend/.vs/RecruitXBackend/config/applicationhost.config
 RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/RecruitXBackend.csproj.BuildWithSkipAnalyzers
 recruitxfront/.vs/recruitxfront/config/applicationhost.config
+=======
+=======
+*.BuildWithSkipAnalyzers
+*.cache
+*.wsuo
+>>>>>>> 7550650686476b91b38ffeb1b3df86a8ce03b336
+>>>>>>> deec99766ded4fe25793e6d2e0dc69731e2ca65c
