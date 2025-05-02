@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\public",
+    "\\src",
+    "\\src\\Components",
+    "\\src\\pages",
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\App.js",
+  "SelectedNode": "\\src\\pages\\NotFound.jsx",
   "PreviewInSolutionExplorer": false
 }

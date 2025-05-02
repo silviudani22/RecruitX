@@ -1,0 +1,128 @@
+/* JobsPage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, #b06588, #dca1d2);
+    background-attachment: fixed;
+}
+
+.jobs-container {
+    width: 100%;
+    padding: 2rem 4rem;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.search-bar {
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    width: 70%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40px;
+    padding: 0 1rem;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+}
+
+    .search-bar::placeholder {
+        color: #333;
+    }
+
+.add-job-btn {
+    position: absolute;
+    right: 150px;
+    top:20px;
+    height: 45px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 40px;
+    background: #fff;
+    color: #333;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    .add-job-btn:hover {
+        background: #eaeaea;
+    }
+
+.filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 14.5px;
+    flex-wrap: wrap;
+}
+
+    .filters label {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-weight: bold;
+    }
+
+    .filters input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        accent-color: #333;   
+    }
+
+.job-list {
+    position: relative;
+    left: -450px;
+    max-height: 600px;
+    overflow-y: auto;
+    border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.1);
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    min-width: 350%;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.job-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.75rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    font-size: 15px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.job-category {
+    font-size: 13px;
+    color: #555;
+    font-weight: 500;
+}
+
+.no-results {
+    text-align: center;
+    color: #777;
+    font-size: 15px;
+    margin-top: 1rem;
+}

@@ -4,6 +4,7 @@ import { useState } from "react"
 import WelcomePage from "./pages/WelcomePage"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
+import JobsPage from "./pages/JobsPage"
 import "./App.css"
 
 function App() {
