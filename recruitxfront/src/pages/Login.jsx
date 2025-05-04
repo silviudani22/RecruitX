@@ -2,7 +2,7 @@
 import "../styles/Login.css"
 import { useEffect } from 'react';
 import axios from 'axios';
-function Login() {
+function Login({ onLoginSuccess }) {
     const handleLogin = async (e) => {
         e.preventDefault();
 
@@ -16,10 +16,12 @@ function Login() {
             alert(response.data.message);
             // Salvează user-ul în localStorage și redirect
             localStorage.setItem('user', JSON.stringify(response.data.user));
-            window.location.href = '/dashboard'; // Sau altă rută
+            onLoginSuccess();
+          
         } catch (error) {
             alert(error.response?.data || "Login failed.");
         }
+       
     };
     return (
         <div className="login-page">
@@ -49,7 +51,7 @@ function Login() {
             <main className="auth-content">
                 <div className="auth-container">
                     <h1>Welcome Back</h1>
-                    <p className="subtitle">Sign in to access your RecruitX account</p>
+                    <p className="subtitle">Log in to access your RecruitX account</p>
 
                     <div className="auth-form" onSubmit={handleLogin }>
                         <form className="login-form" >

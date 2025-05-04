@@ -1,9 +1,10 @@
-"use client"
+﻿"use client"
 
 import { useState } from "react"
 import WelcomePage from "./pages/WelcomePage"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
+import HomePage from "./pages/HomePage" 
 import "./App.css"
 
 function App() {
@@ -13,14 +14,24 @@ function App() {
   const navigate = (page) => {
     setCurrentPage(page)
   }
-
+  
   
   const renderPage = () => {
     switch (currentPage) {
       case "login":
-        return <Login onBackClick={() => navigate("welcome")} onSignUpClick={() => navigate("signup")} />
+            return (<Login
+                onBackClick={() => navigate("welcome")}
+                //onSignUpClick={() => navigate("signup")}
+                onLoginSuccess={ ()=> navigate("home")}
+                 />)
+            
       case "signup":
-        return <SignUp onBackClick={() => navigate("welcome")} onLoginClick={() => navigate("login")} />
+            return (
+                <SignUp
+                    onBackClick={() => navigate("welcome")}
+                    onLoginClick={() => navigate("login")} />)
+        case "home": // Adaugă acest caz
+            return (<HomePage/>)
       default:
         return (
           <WelcomePage
