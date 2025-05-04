@@ -7,8 +7,45 @@
 *.cs
 *.editorconfig
 recruitxfront/.vs/recruitxfront/v17/.wsuo
+<<<<<<< HEAD
+RecruitXBackend/.vs/RecruitXBackend/config/applicationhost.config
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/RecruitXBackend.csproj.BuildWithSkipAnalyzers
+recruitxfront/.vs/recruitxfront/config/applicationhost.config
+=======
 =======
 *.BuildWithSkipAnalyzers
 *.cache
 *.wsuo
 >>>>>>> 7550650686476b91b38ffeb1b3df86a8ce03b336
+>>>>>>> deec99766ded4fe25793e6d2e0dc69731e2ca65c
+RecruitXBackend/RecruitXBackend.Data/obj/.EntityFrameworkCore.targets
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/BCrypt.Net-Next.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/EntityFramework.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/EntityFramework.SqlServer.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/Microsoft.Bcl.Memory.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/System.Data.SqlClient.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/runtimes/win-arm64/native/sni.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/runtimes/win-x64/native/sni.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/runtimes/win-x86/native/sni.dll
+RecruitXBackend/RecruitXBackend/obj/RecruitXBackend.csproj.EntityFrameworkCore.targets
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/Microsoft.Identity.Client.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/System.Composition.TypedParts.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll
+RecruitXBackend/RecruitXBackend/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+RecruitXBackend/RecruitXBackend/obj/RecruitXBackend.csproj.nuget.g.props
+RecruitXBackend/RecruitXBackend/obj/RecruitXBackend.csproj.nuget.g.targets
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/apphost.exe
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/RecruitXBackend.csproj.FileListAbsolute.txt
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/RecruitXBackend.dll
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/RecruitXBackend.pdb
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/ref/RecruitXBackend.dll
+RecruitXBackend/RecruitXBackend/obj/Debug/net8.0/refint/RecruitXBackend.dll
+recruitxfront/.vs/slnx.sqlite
