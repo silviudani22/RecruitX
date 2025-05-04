@@ -1,70 +1,106 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using RecruitXBackend.Data;
-using RecruitXBackend.Models;
 using RecruitXBackend.Models.Domain;
+using RecruitXBackend.Models;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+using RecruitXBackend.Data;
+using Microsoft.EntityFrameworkCore;
 
-namespace RecruitXBackend.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class UsersController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UsersController : ControllerBase
+    private readonly RecruitXContext context;
+
+    [HttpPost("signup")]
+    public IActionResult SignUp(UserDto userDto)
     {
-        private readonly RecruitXContext context;
-        public UsersController(RecruitXContext context)
+        // Verifică dacă utilizatorul există deja
+        var existingUser = context.Users.FirstOrDefault(u => u.email == userDto.email || u.username == userDto.username);
+        if (existingUser != null)
         {
-            this.context = context;
+            return BadRequest("User already exists");
         }
 
-
-        [HttpGet]
-        public IActionResult GetUsers()
+        var user = new Users
         {
-            var users = context.Users.OrderByDescending(e => e.id).ToList();
-            return Ok(users);
+            username = userDto.username,
+            email = userDto.email,
+            password = userDto.password, // În producție, ar trebui să hash-uiți parola
+            lastName = userDto.lastName,
+            firstName = userDto.firstName
+        };
+
+        context.Users.Add(user);
+        context.SaveChanges();
+
+        return Ok(new { message = "User registered successfully" });
+    }
+
+    [HttpPost("login")]
+    public IActionResult Login(LoginDto loginDto)
+    {
+        var user = context.Users.FirstOrDefault(u => u.email == loginDto.email && u.password == loginDto.password);
+        if (user == null)
+        {
+            return Unauthorized("Invalid email or password");
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetUser(int id)
+        // În producție, aici ai genera un token JWT
+        return Ok(new { message = "Login successful", user });
+    }
+
+
+    public UsersController(RecruitXContext context)
+    {
+        this.context = context;
+    }
+
+    [HttpGet]
+    public IActionResult GetUsers()
+    {
+        var users = context.Users.OrderByDescending(u => u.id).ToList();
+        return Ok(users);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetUser(string id) // Schimbat din int în string
+    {
+        var user = context.Users.Find(id);
+        if (user == null) return NotFound();
+
+        return Ok(user);
+    }
+
+    [HttpPost]
+    public IActionResult CreateUser(UserDto userDto)
+    {
+        var user = new Users
         {
-            var usr = context.Users.Find(id);
-            if(usr == null)
-            {
-                return NotFound();
-            }
-            return Ok(usr);
-        }
+            username = userDto.username,
+            email = userDto.email,
+            password = userDto.password,
+            lastName = userDto.lastName,
+            firstName = userDto.firstName
+        };
+        context.Users.Add(user);
+        context.SaveChanges();
 
-        [HttpPost]
-        public IActionResult CreateUser(UserDto userDto)
-        {
-            var usr = new Users
-            {
-                username = userDto.username,
-                email = userDto.email,
-                password = userDto.password,
-                role = userDto.role,
-                lastName = userDto.lastName,
-                firstName = userDto.firstName,
-            };
-            context.Users.Add(usr);
-            context.SaveChanges();
+        return Ok(user);
+    }
 
-            return Ok(usr);
-        }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteUser(string id)
+    {
+        var user = context.Users.Find(id);
+        if (user == null) return NotFound();
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteUser(int id)
-        {
-            var usr = context.Users.Find(id);
-            if(usr == null)
-            {
-                return NotFound();
-            }
-            context.Users.Remove(usr);
-            context.SaveChanges();
+       context.Users.Remove(user);
+        context.SaveChanges();
 
-            return Ok();
-        }
+        return Ok();
     }
 }

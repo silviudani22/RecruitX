@@ -1,48 +1,30 @@
-/* eslint-disable no-undef */
+﻿/* eslint-disable no-undef */
 "use client"
 import "../styles/SignUp.css"
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
 
 function SignUp({ onBackClick, onLoginClick }) {
-    const [lastName, setLastName] = useState('');
-    const [fistName, setFirstName] = useState('');
-    const [username, setUsername] = useState('');
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const handleLastNameChange = (value) => {
-        setLastName(value);
-    }
-    const handleFirstNameChange = (value) => {
-        setFirstName(value);
-    }
-    const handleUsernameChange = (value) => {
-        setUsername(value);
-    }
-    const handleEmailChange = (value) => {
-        setEmail(value);
-    }
-    const handlePasswordChange = (value) => {
-        setPassword(value);
-    }
-
     const handleSave = async (e) => {
-        const data = {
-            username,
-            email,
-            password,
-            lastName,
-            firstName,
+        e.preventDefault();
+
+        const userData = {
+            username: document.getElementById("userName").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("LastName").value,
         };
-        const url = '';
-        axios.post(url, data).then((result) => {
-            if (result.data == 'Data Inserted.')
-                alert('data saved')
-            else
-            aler(result.data)
-        })
-    }
+
+        try {
+            const response = await axios.post("http://localhost:5054/api/users/signup", userData);
+            alert(response.data.message);
+            // Redirect către login sau dashboard
+            onLoginClick();
+        } catch (error) {
+            alert(error.response?.data || "Signup failed.");
+        }
+    };
     return (
         <Fragment>
             <div className="signup-page">
@@ -78,25 +60,25 @@ function SignUp({ onBackClick, onLoginClick }) {
                             <form className="signup-form">
                                 <div className="form-group">
                                     <label htmlFor="fullName">Last Name</label>
-                                    <input type="text" id="LastName" placeholder="Enter your last name" required onChange={(e) => handleLastNameChange(e.target.value)} />
+                                    <input type="text" id="LastName" placeholder="Enter your last name" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="fullName">First Name</label>
-                                    <input type="text" id="firstName" placeholder="Enter your first name" required onChange={(e) => handleFirstNameChange(e.target.value)} />
+                                    <input type="text" id="firstName" placeholder="Enter your first name" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="userName">Username</label>
-                                    <input type="text" id="userName" placeholder="Enter your username" required onChange={(e) => handleUsernameChange(e.target.value)} />
+                                    <input type="text" id="userName" placeholder="Enter your username" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="email">Email</label>
-                                    <input type="email" id="email" placeholder="Enter your email" required onChange={(e) => handleEmailChange(e.target.value)} />
+                                    <input type="email" id="email" placeholder="Enter your email" required />
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="password">Password</label>
-                                    <input type="password" id="password" placeholder="Create a password" required onChange={(e) => handlePasswordChange(e.target.value)} />
+                                    <input type="password" id="password" placeholder="Create a password" required />
                                 </div>
-                                <button onClick={() => handleSave()} type="submit" className="primary-btn">
+                                <button type="submit" className="primary-btn" onClick={handleSave}>
                                     Sign Up
                                 </button>
                             </form>
@@ -121,5 +103,6 @@ function SignUp({ onBackClick, onLoginClick }) {
             </div>
         </Fragment>
     )
+
 }
 export default SignUp;
