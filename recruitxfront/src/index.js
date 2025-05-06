@@ -4,11 +4,14 @@ import "./index.css"
 import App from "./App"
 import JobsPage from "./pages/JobsPage"
 import NotFound from "./pages/NotFound"
+import AddJobPage from "./pages/AddJobPage"
+import ApplyPage from "./pages/ApplyPage"
 
 import {
     createBrowserRouter,
     RouterProvider,
 } from "react-router-dom";
+import AddJobButton from "./Components/AddJobButton"
 
 const router = createBrowserRouter([
     {
@@ -23,10 +26,15 @@ const router = createBrowserRouter([
         errorElement: <NotFound />
     },
 
-   /* {
-        path: "*",
-        element: <NotFound />,
-    }, */
+    {
+        path: "add-job",
+        element: <AddJobPage />,
+    }, 
+
+    {
+        path: "/apply",
+        element: <ApplyPage />,
+    },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"))

@@ -1,26 +1,9 @@
-/*import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-function JobsPage() {
-    return (
-        <div>
-        <Navbar></Navbar>
-        <div>JobsPage</div>
-
-        </div>
-    )
-}
-
-export default JobsPage;
-*/
 // src/pages/JobsPage.jsx
 import React, { useEffect, useState } from "react";
 import "../styles/JobsPage.css";
-import MyModal from "../Components/MyModal"
+import AddJobButton from "../Components/AddJobButton";
+import { useNavigate } from "react-router-dom";
 
-
-// Dummy user context — in real app, fetch from auth
 const currentUser = {
     role: "company", // or "candidate"
 };
@@ -34,14 +17,14 @@ const allJobsFromServer = [
     { id: 6, title: "C# Developer", category: "IT" },
     { id: 7, title: "Call Center Guy", category: "HR" },
     { id: 8, title: "FIFA Gamer", category: "Game" },
-
-
 ];
 
 const JobsPage = () => {
     const [jobs, setJobs] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const [filters, setFilters] = useState([]);
+    const [selectedJob, setSelectedJob] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         // Simulate API fetch
@@ -56,6 +39,7 @@ const JobsPage = () => {
         );
     };
 
+    // Filtered jobs based on search term and selected categories
     const filteredJobs = jobs.filter((job) => {
         const matchesSearch = job.title.toLowerCase().includes(searchTerm.toLowerCase());
         const matchesFilter = filters.length === 0 || filters.includes(job.category);
@@ -73,12 +57,11 @@ const JobsPage = () => {
                     className="search-bar"
                 />
 
-                {currentUser.role === "company" && <MyModal />}
-
+                {currentUser.role === "company" && <AddJobButton />}
             </div>
 
             <div className="filters">
-                {["Engineering", "Marketing", "HR" , "IT" ,"Game"].map((cat) => (
+                {["Engineering", "Marketing", "HR", "IT", "Game"].map((cat) => (
                     <label key={cat}>
                         <input
                             type="checkbox"
@@ -90,16 +73,32 @@ const JobsPage = () => {
                 ))}
             </div>
 
+            {/* Job List */}
             <div className="job-list">
                 {filteredJobs.map((job) => (
-                    <div key={job.id} className="job-item">
+                    <div
+                        key={job.id}
+                        className={`job-item ${selectedJob?.id === job.id ? "selected" : ""}`}
+                        onClick={() => setSelectedJob(selectedJob?.id === job.id ? null : job)}
+                    >
                         {job.title} <span className="job-category">({job.category})</span>
                     </div>
                 ))}
                 {filteredJobs.length === 0 && <div className="no-results">No jobs found.</div>}
             </div>
+            
+            {/* Display selected job and apply button */}
+            {selectedJob && (
+                <div className="selected-job">
+                    <span>{selectedJob.title}</span>
+                    <button
+                        className="apply-btn"
+                        onClick={() => navigate('/apply') }
+                    >Apply
+                    </button>
+                </div>
+            )}
         </div>
-
     );
 };
 

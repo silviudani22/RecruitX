@@ -1,11 +1,14 @@
 "use client"
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import "./App.css"
 import { useState } from "react"
 import WelcomePage from "./pages/WelcomePage"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
 import JobsPage from "./pages/JobsPage"
-import "./App.css"
+import AddJobButton from './Components/AddJobButton';
+import AddJobPage from "./pages/AddJobPage"
 
 function App() {
   const [currentPage, setCurrentPage] = useState("welcome")
