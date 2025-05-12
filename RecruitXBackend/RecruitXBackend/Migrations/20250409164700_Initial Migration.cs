@@ -54,7 +54,6 @@ namespace RecruitXBackend.Migrations
                     experienceNedeed = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     flexibility = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     program = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    idCompany = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Companyid = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>

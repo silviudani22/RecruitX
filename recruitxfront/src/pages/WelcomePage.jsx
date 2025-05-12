@@ -1,8 +1,10 @@
 "use client"
 
 import "../styles/WelcomePage.css"
+import { useNavigate } from "react-router-dom";
 
 function WelcomePage({ onLoginClick, onSignupClick, onGetStartedClick }) {
+    const navigate = useNavigate();
   return (
     <div className="welcome-page">
       <nav className="navbar">
@@ -12,10 +14,10 @@ function WelcomePage({ onLoginClick, onSignupClick, onGetStartedClick }) {
           </div>
         </div>
         <div className="auth-buttons">
-          <button className="login-btn" onClick={onLoginClick}>
+                  <button className="login-btn" onClick={() => navigate("/login")}>
             Log In
           </button>
-          <button className="signup-btn" onClick={onSignupClick}>
+                  <button className="signup-btn" onClick={() => navigate("/signup")}>
             Sign Up
           </button>
         </div>

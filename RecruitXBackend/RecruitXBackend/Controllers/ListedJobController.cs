@@ -1,68 +1,113 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using RecruitXBackend.Data;
-using RecruitXBackend.Models;
 using RecruitXBackend.Models.Domain;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace RecruitXBackend.Controllers
+[Route("api/[controller]")]
+[ApiController]
+public class ListedJobsController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ListedJobController : ControllerBase
+    private readonly RecruitXContext _context;
+
+    public ListedJobsController(RecruitXContext context)
     {
-        private readonly RecruitXContext context;
+        _context = context;
+    }
 
-        public ListedJobController(RecruitXContext context)
+    // GET: api/ListedJobs
+    [HttpGet]
+    public IActionResult GetListedJobs()
+    {
+        var jobs = _context.ListedJobs.OrderByDescending(u => u.id).ToList();
+        return Ok(jobs);
+    }
+
+    // GET: api/ListedJobs/5
+    [HttpGet("{id}")]
+    public async Task<ActionResult<ListedJob>> GetListedJob(int id)
+    {
+        var listedJob = await _context.ListedJobs.FindAsync(id);
+
+        if (listedJob == null)
         {
-            this.context = context;
+            return NotFound();
         }
 
-        [HttpGet]
-        public IActionResult GetListedJobs()
+        return listedJob;
+    }
+
+    // POST: api/ListedJobs
+    [HttpPost]
+    public async Task<ActionResult<ListedJob>> PostListedJob(ListedJob listedJob)
+    {
+        // Validare de bază
+        if (string.IsNullOrWhiteSpace(listedJob.companyName))
         {
-            var jobs = context.ListedJobs.OrderByDescending(e => e.id).ToList();
-            return Ok(jobs);
+            return BadRequest("Company name is required");
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetListedJob(int id)
+        if (string.IsNullOrWhiteSpace(listedJob.Companyid))
         {
-            var job = context.ListedJobs.Find(id);
-                if(job == null)
-            { return NotFound(); }
-            return Ok(job);
+            return BadRequest("Company ID is required");
         }
 
-        [HttpPost]
-        public IActionResult CreateJob(ListedJobDto listedJobDto)
-        {
-            var job = new ListedJob
-            {
-                companyName = listedJobDto.companyName,
-                technology = listedJobDto.technology,
-                experienceNedeed = listedJobDto.experienceNedeed,
-                flexibility = listedJobDto.flexibility,
-                program = listedJobDto.program,
-                idCompany = listedJobDto.idCompany,
-            };
-            context.ListedJobs.Add(job);
-            context.SaveChanges();
+        _context.ListedJobs.Add(listedJob);
+        await _context.SaveChangesAsync();
 
-            return Ok(job);
+        return CreatedAtAction(nameof(GetListedJob), new { id = listedJob.id }, listedJob);
+    }
+
+    // PUT: api/ListedJobs/5
+    [HttpPut("{id}")]
+    public async Task<IActionResult> PutListedJob(int id, ListedJob listedJob)
+    {
+        if (id != listedJob.id)
+        {
+            return BadRequest("ID mismatch");
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult DeleteListedJob(int id)
+        _context.Entry(listedJob).State = EntityState.Modified;
+
+        try
         {
-            var job = context.ListedJobs.Find(id);
-            if(job == null)
+            await _context.SaveChangesAsync();
+        }
+        catch (DbUpdateConcurrencyException)
+        {
+            if (!ListedJobExists(id))
             {
                 return NotFound();
             }
-            context.ListedJobs.Remove(job);
-            context.SaveChanges();
-
-            return Ok();
+            else
+            {
+                throw;
+            }
         }
+
+        return NoContent();
+    }
+
+    // DELETE: api/ListedJobs/5
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteListedJob(int id)
+    {
+        var listedJob = await _context.ListedJobs.FindAsync(id);
+        if (listedJob == null)
+        {
+            return NotFound();
+        }
+
+        _context.ListedJobs.Remove(listedJob);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
+
+    private bool ListedJobExists(int id)
+    {
+        return _context.ListedJobs.Any(e => e.id == id);
     }
 }

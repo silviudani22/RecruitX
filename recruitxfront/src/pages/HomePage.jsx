@@ -1,6 +1,8 @@
 import "../styles/HomePage.css"
-
-function HomePage({ onJobsClick }) { 
+import CompanyGallery from "./CompanyGallery"
+import { useNavigate } from "react-router-dom";
+function HomePage() { 
+    const navigate = useNavigate();
     return (
         <div className="home-page">
             <nav className="navbar">
@@ -9,31 +11,28 @@ function HomePage({ onJobsClick }) {
                         <span className="logo-text">RecruitX</span>
                     </div>
                 </div>
+
                 <div className="auth-buttons">
-                    <button className="jobs-btn" onClick={onJobsClick}>
+                    <button className="jobs-btn" onClick={()=>navigate("/jobs")}>
                         Jobs
                     </button>
+                    <button className="jobs-btn" onClick={() => navigate("/info")}>
+                        Info
+                    </button>
+                    <button className="jobs-btn" onClick={() => navigate("/about")}>
+                        About
+                    </button>
+                    <button className="jobs-btn" onClick={() => navigate("/welcome")}>
+                        LogOut
+                    </button>
                 </div>
+
+               
             </nav>
 
             <main className="home-content">
-                <div className="hero-section">
-                    <h1>
-                        Welcome to <span className="highlight">RecruitX</span>
-                    </h1>
-                    <p className="subtitle">The next generation recruitment platform</p>
-                    <div className="cta-buttons">
-                        <button className="primary-btn" onClick={onJobsClick}>
-                            Get Started
-                        </button>
-                        <button className="secondary-btn">Learn More</button>
-                    </div>
-                </div>
-                <div className="hero-image">
-                    <div className="image-placeholder">
-                        <div className="gradient-circle"></div>
-                    </div>
-                </div>
+                
+            <CompanyGallery></CompanyGallery>
             </main>
         </div>
     )

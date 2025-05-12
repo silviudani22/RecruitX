@@ -12,8 +12,9 @@ namespace RecruitXBackend.Models.Domain
         public string experienceNedeed { set; get; }
         public string flexibility { set; get; }
         public string program { set; get; }
+        public Company Company { set; get; }
         [ForeignKey("Company")]
-        public string idCompany { set; get; }
+        public string Companyid { set; get; }
 
         public ICollection<JobApplication> JobApplications { get; set; }
     }

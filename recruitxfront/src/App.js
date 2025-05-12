@@ -5,45 +5,27 @@ import WelcomePage from "./pages/WelcomePage"
 import Login from "./pages/Login"
 import SignUp from "./pages/SignUp"
 import HomePage from "./pages/HomePage" 
+import JobsPage from "./pages/JobsPage" 
+import InfoPage from "./pages/InfoPage" 
+import AboutUsPage from "./pages/AboutUsPage" 
 import "./App.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("welcome")
 
-  // Simple routing function
-  const navigate = (page) => {
-    setCurrentPage(page)
-  }
-  
-  
-  const renderPage = () => {
-    switch (currentPage) {
-      case "login":
-            return (<Login
-                onBackClick={() => navigate("welcome")}
-                //onSignUpClick={() => navigate("signup")}
-                onLoginSuccess={ ()=> navigate("home")}
-                 />)
-            
-      case "signup":
-            return (
-                <SignUp
-                    onBackClick={() => navigate("welcome")}
-                    onLoginClick={() => navigate("login")} />)
-        case "home": // Adaugă acest caz
-            return (<HomePage/>)
-      default:
-        return (
-          <WelcomePage
-            onLoginClick={() => navigate("login")}
-            onSignupClick={() => navigate("signup")}
-            onGetStartedClick={() => navigate("signup")}
-          />
-        )
-    }
-  }
-
-  return <div className="App">{renderPage()}</div>
+    return (
+        <Routes>
+            <Route path="/login" element={<Login/> }/>
+            <Route path="/signup" element={<SignUp/> }/>
+            <Route path="/home" element={<HomePage/> }/>
+            <Route path="/jobs" element={<JobsPage/> }/>
+            <Route path="/info" element={<InfoPage/> }/>
+            <Route path="/about" element={<AboutUsPage/> }/>
+            <Route path="*" element={<WelcomePage/> }/>
+        </Routes>
+        //<JobsPage></JobsPage>
+  );
 }
 
 export default App

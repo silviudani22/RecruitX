@@ -21,7 +21,7 @@ namespace RecruitXBackend.Controllers
         [HttpGet]
         public IActionResult GetApplications()
         {
-            var appls = context.Users.OrderByDescending(e => e.id).ToList();
+            var appls = context.JobApplications.OrderByDescending(e => e.id).ToList();
             return Ok(appls);
         }
 

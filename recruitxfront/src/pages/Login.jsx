@@ -2,7 +2,9 @@
 import "../styles/Login.css"
 import { useEffect } from 'react';
 import axios from 'axios';
-function Login({ onLoginSuccess }) {
+import { useNavigate } from "react-router-dom";
+function Login() {
+    const navigate = useNavigate();
     const handleLogin = async (e) => {
         e.preventDefault();
 
@@ -13,10 +15,10 @@ function Login({ onLoginSuccess }) {
 
         try {
             const response = await axios.post("http://localhost:5054/api/users/login", loginData);
-            alert(response.data.message);
+            //alert(response.data.message);
             // Salvează user-ul în localStorage și redirect
             localStorage.setItem('user', JSON.stringify(response.data.user));
-            onLoginSuccess();
+            navigate("/home");
           
         } catch (error) {
             alert(error.response?.data || "Login failed.");

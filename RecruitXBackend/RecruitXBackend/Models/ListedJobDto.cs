@@ -9,6 +9,6 @@ namespace RecruitXBackend.Models
         public string experienceNedeed { set; get; }
         public string flexibility { set; get; }
         public string program { set; get; }
-        public string idCompany { set; get; }
+        public string Companyid { set; get; }
     }
 }

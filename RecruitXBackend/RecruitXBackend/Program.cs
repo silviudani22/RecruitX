@@ -20,7 +20,7 @@ builder.Services.AddSingleton<IConfiguration>(builder.Configuration);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddCors();
 
 
 builder.Services.AddCors(options =>
@@ -32,6 +32,7 @@ builder.Services.AddCors(options =>
                .AllowAnyHeader();
     });
 });
+
 // ...
 
 //builder.Services.AddIdentityApiEndpoints<Users>().AddEntityFrameworkStores<RecruitXContext>();
@@ -48,7 +49,11 @@ var app = builder.Build();
 //    app.UseSwagger();
 //    app.UseSwaggerUI();
 //}
-
+app.Use(async (context, next) => {
+    Console.WriteLine($"Request: {context.Request.Method} {context.Request.Path}");
+    await next();
+    Console.WriteLine($"Response: {context.Response.StatusCode}");
+});
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

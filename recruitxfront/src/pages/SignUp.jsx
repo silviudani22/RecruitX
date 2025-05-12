@@ -3,8 +3,9 @@
 import "../styles/SignUp.css"
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
-
-function SignUp({ onBackClick, onLoginClick }) {
+import { useNavigate } from "react-router-dom";
+function SignUp() {
+    const navigate = useNavigate();
     const handleSave = async (e) => {
         e.preventDefault();
 
@@ -30,7 +31,7 @@ function SignUp({ onBackClick, onLoginClick }) {
             <div className="signup-page">
                 <nav className="navbar">
                     <div className="logo-container">
-                        <button className="back-button" onClick={onBackClick} aria-label="Go back">
+                        <button className="back-button" onClick={() => window.history.back()} aria-label="Go back">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -87,7 +88,7 @@ function SignUp({ onBackClick, onLoginClick }) {
                         <div className="auth-switch">
                             <p>
                                 Already have an account?{" "}
-                                <button onClick={onLoginClick} className="switch-link">
+                                <button onClick={()=>navigate("/login")} className="switch-link">
                                     Log In
                                 </button>
                             </p>

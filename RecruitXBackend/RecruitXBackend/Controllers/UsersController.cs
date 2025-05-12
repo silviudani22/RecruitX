@@ -29,7 +29,7 @@ public class UsersController : ControllerBase
         {
             username = userDto.username,
             email = userDto.email,
-            password = userDto.password, // În producție, ar trebui să hash-uiți parola
+            password = userDto.password, 
             lastName = userDto.lastName,
             firstName = userDto.firstName
         };
