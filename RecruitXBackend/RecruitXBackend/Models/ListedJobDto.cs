@@ -4,11 +4,12 @@ namespace RecruitXBackend.Models
 {
     public class ListedJobDto
     {
-        public string companyName { set; get; }
-        public string technology { set; get; }
-        public string experienceNedeed { set; get; }
-        public string flexibility { set; get; }
-        public string program { set; get; }
-        public string Companyid { set; get; }
+        public int id { get; set; }
+        public string companyName { get; set; }
+        public string technology { get; set; }
+        public string experienceNeeded { get; set; }
+        public string flexibility { get; set; }
+        public string program { get; set; }
+        public int Companyid { get; set; }
     }
 }

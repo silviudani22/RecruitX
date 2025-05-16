@@ -1,12 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RecruitXBackend.Data;
+using RecruitXBackend.Models;
 using RecruitXBackend.Models.Domain;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-[Route("api/[controller]")]
+[Route("api/jobs")]
 [ApiController]
 public class ListedJobsController : ControllerBase
 {
@@ -17,13 +18,6 @@ public class ListedJobsController : ControllerBase
         _context = context;
     }
 
-    // GET: api/ListedJobs
-    [HttpGet]
-    public IActionResult GetListedJobs()
-    {
-        var jobs = _context.ListedJobs.OrderByDescending(u => u.id).ToList();
-        return Ok(jobs);
-    }
 
     // GET: api/ListedJobs/5
     [HttpGet("{id}")]
@@ -39,56 +33,71 @@ public class ListedJobsController : ControllerBase
         return listedJob;
     }
 
-    // POST: api/ListedJobs
+    // POST: api/jobs - Pentru modal
     [HttpPost]
-    public async Task<ActionResult<ListedJob>> PostListedJob(ListedJob listedJob)
+    public async Task<ActionResult<ListedJob>> PostListedJob([FromBody] ListedJob job)
     {
-        // Validare de bază
-        if (string.IsNullOrWhiteSpace(listedJob.companyName))
+        if (!ModelState.IsValid)
         {
-            return BadRequest("Company name is required");
+            // Asta va returna detalii despre ce nu e valid în payload!
+            return BadRequest(ModelState);
         }
 
-        if (string.IsNullOrWhiteSpace(listedJob.Companyid))
-        {
-            return BadRequest("Company ID is required");
-        }
-
-        _context.ListedJobs.Add(listedJob);
+        _context.ListedJobs.Add(job);
         await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetListedJob), new { id = listedJob.id }, listedJob);
+        return CreatedAtAction(nameof(GetListedJob), new { id = job.id }, job);
     }
 
-    // PUT: api/ListedJobs/5
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutListedJob(int id, ListedJob listedJob)
+    // POST: api/ListedJobs
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<ListedJobDto>>> GetListedJobs()
     {
-        if (id != listedJob.id)
-        {
-            return BadRequest("ID mismatch");
-        }
-
-        _context.Entry(listedJob).State = EntityState.Modified;
-
-        try
-        {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!ListedJobExists(id))
+        var jobs = await _context.ListedJobs
+            .Include(j => j.Company)
+            .Select(j => new ListedJobDto
             {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
-        }
+                id = j.id,
+                companyName = j.companyName,
+                technology = j.technology,
+                experienceNeeded = j.experienceNeeded,
+                flexibility = j.flexibility,
+                program = j.program,
+                Companyid = j.Companyid
+            })
+            .ToListAsync();
 
-        return NoContent();
+        return Ok(jobs);
     }
+
+    //// PUT: api/ListedJobs/5
+    //[HttpPut("{id}")]
+    //public async Task<IActionResult> PutListedJob(int id, ListedJob listedJob)
+    //{
+    //    if (id != listedJob.id)
+    //    {
+    //        return BadRequest("ID mismatch");
+    //    }
+
+    //    _context.Entry(listedJob).State = EntityState.Modified;
+
+    //    try
+    //    {
+    //        await _context.SaveChangesAsync();
+    //    }
+    //    catch (DbUpdateConcurrencyException)
+    //    {
+    //        if (!ListedJobExists(id))
+    //        {
+    //            return NotFound();
+    //        }
+    //        else
+    //        {
+    //            throw;
+    //        }
+    //    }
+
+    //    return NoContent();
+    //}
 
     // DELETE: api/ListedJobs/5
     [HttpDelete("{id}")]

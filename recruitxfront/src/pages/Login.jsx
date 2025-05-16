@@ -15,8 +15,6 @@ function Login() {
 
         try {
             const response = await axios.post("http://localhost:5054/api/users/login", loginData);
-            //alert(response.data.message);
-            // Salvează user-ul în localStorage și redirect
             localStorage.setItem('user', JSON.stringify(response.data.user));
             navigate("/home");
           

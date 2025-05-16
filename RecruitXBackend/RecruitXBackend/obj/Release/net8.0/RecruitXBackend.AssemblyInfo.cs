@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RecruitXBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f076bfdca44201197a5469e3ebe6e26a698a938f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d665bd2781437af3ba534f6bfe9c91059ae52280")]
 [assembly: System.Reflection.AssemblyProductAttribute("RecruitXBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RecruitXBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

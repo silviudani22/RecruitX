@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RecruitXBackend.Models.Domain
@@ -6,16 +7,16 @@ namespace RecruitXBackend.Models.Domain
     public class ListedJob
     {
         [Key]
-        public int id { set; get; }
-        public string companyName { set; get; }
-        public string technology { set; get; }
-        public string experienceNedeed { set; get; }
-        public string flexibility { set; get; }
-        public string program { set; get; }
-        public Company Company { set; get; }
-        [ForeignKey("Company")]
-        public string Companyid { set; get; }
+        public int id { get; set; }
+        public string companyName { get; set; }
+        public string technology { get; set; }
+        public string experienceNeeded { get; set; }
+        public string flexibility { get; set; }
+        public string program { get; set; }
 
-        public ICollection<JobApplication> JobApplications { get; set; }
+        [ForeignKey("Company")]
+        public int Companyid { get; set; }
+        public Company? Company { get; set; }
+        public ICollection<JobApplication>? JobApplications { get; set; }
     }
 }

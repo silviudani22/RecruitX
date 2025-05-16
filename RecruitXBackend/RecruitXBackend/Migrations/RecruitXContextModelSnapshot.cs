@@ -17,7 +17,7 @@ namespace RecruitXBackend.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.4")
+                .HasAnnotation("ProductVersion", "9.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -58,9 +58,6 @@ namespace RecruitXBackend.Migrations
                     b.Property<int?>("ListedJobid")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Usersid")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("applicationDate")
                         .HasColumnType("datetime2");
 
@@ -74,8 +71,6 @@ namespace RecruitXBackend.Migrations
 
                     b.HasIndex("ListedJobid");
 
-                    b.HasIndex("Usersid");
-
                     b.ToTable("JobApplications");
                 });
 
@@ -87,22 +82,18 @@ namespace RecruitXBackend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
 
-                    b.Property<int?>("Companyid")
+                    b.Property<int>("Companyid")
                         .HasColumnType("int");
 
                     b.Property<string>("companyName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("experienceNedeed")
+                    b.Property<string>("experienceNeeded")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("flexibility")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("idCompany")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -145,10 +136,6 @@ namespace RecruitXBackend.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("username")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -163,17 +150,17 @@ namespace RecruitXBackend.Migrations
                     b.HasOne("RecruitXBackend.Models.Domain.ListedJob", null)
                         .WithMany("JobApplications")
                         .HasForeignKey("ListedJobid");
-
-                    b.HasOne("RecruitXBackend.Models.Domain.Users", null)
-                        .WithMany("JobApplications")
-                        .HasForeignKey("Usersid");
                 });
 
             modelBuilder.Entity("RecruitXBackend.Models.Domain.ListedJob", b =>
                 {
-                    b.HasOne("RecruitXBackend.Models.Domain.Company", null)
+                    b.HasOne("RecruitXBackend.Models.Domain.Company", "Company")
                         .WithMany("ListedJobs")
-                        .HasForeignKey("Companyid");
+                        .HasForeignKey("Companyid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
                 });
 
             modelBuilder.Entity("RecruitXBackend.Models.Domain.Company", b =>
@@ -182,11 +169,6 @@ namespace RecruitXBackend.Migrations
                 });
 
             modelBuilder.Entity("RecruitXBackend.Models.Domain.ListedJob", b =>
-                {
-                    b.Navigation("JobApplications");
-                });
-
-            modelBuilder.Entity("RecruitXBackend.Models.Domain.Users", b =>
                 {
                     b.Navigation("JobApplications");
                 });
