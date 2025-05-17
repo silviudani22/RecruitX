@@ -72,17 +72,19 @@ function JobsPage() {
             </nav>
 
             <main className="home-content">
-                <div className="hero-section">
-                    <button className="jobs-btn" onClick={() => setShowModal(true)}>
-                        Add Job
-                    </button>
+                <div className="jobs-section">
+                    <div className="jobs-header">
+                        <h1>Available Jobs</h1>
+                        <button className="add-job-btn" onClick={() => setShowModal(true)}>
+                            + Add Job
+                        </button>
+                    </div>
                     {showModal && (
                         <JobModal
                             onClose={() => setShowModal(false)}
                             onSave={handleSaveJob}
                         />
                     )}
-                    <h1>Available Jobs</h1>
                     {loading ? (
                         <div className="loading">Loading jobs...</div>
                     ) : (

@@ -186,5 +186,179 @@ h1 {
     .hero-image {
         display: none;
     }
+
+    .table-container {
+        padding: 0.5rem 0.2rem;
+    }
+
+    .jobs-table th, .jobs-table td {
+        padding: 10px 6px;
+        font-size: 0.98rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section > .jobs-btn {
+        width: 100%;
+        padding: 0.8rem 0;
+        font-size: 1rem;
+    }
+
 }
 
+.hero-section > .jobs-btn {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(138, 43, 226, 0.10);
+    padding: 0.9rem 2.2rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 1.2rem;
+    background: linear-gradient(90deg, #8a2be2 30%, #ff69b4 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 0 2px 8px rgba(138, 43, 226, 0.08);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+    h1::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 4px;
+        margin: 0.5rem auto 0 auto;
+        background: linear-gradient(90deg, #8a2be2, #ff69b4);
+        border-radius: 2px;
+        opacity: 0.7;
+    }
+
+.jobs-section {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(138, 43, 226, 0.08);
+    padding: 2.5rem 2rem 2rem 2rem;
+    margin: 2rem auto 0 auto;
+    max-width: 950px;
+}
+
+.jobs-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+
+    .jobs-header h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0;
+        background: linear-gradient(90deg, #8a2be2 30%, #ff69b4 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        letter-spacing: 1px;
+    }
+
+.add-job-btn {
+    padding: 0.9rem 2.2rem;
+    background: linear-gradient(135deg, #8a2be2, #ff69b4);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(138, 43, 226, 0.10);
+    transition: all 0.2s;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+    .add-job-btn:hover, .add-job-btn:focus {
+        transform: translateY(-2px) scale(1.03);
+        box-shadow: 0 6px 24px rgba(138, 43, 226, 0.18);
+        border: 2px solid #ff69b4;
+    }
+
+.table-container {
+    margin: 0 auto;
+    max-width: 900px;
+    overflow-x: auto;
+    border-radius: 12px;
+    background: #faf7fd;
+    box-shadow: 0 2px 8px rgba(138, 43, 226, 0.06);
+    padding: 1.5rem 1rem;
+}
+
+.jobs-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 1.08rem;
+}
+
+    .jobs-table th,
+    .jobs-table td {
+        padding: 16px 18px;
+        text-align: left;
+        border-bottom: 1px solid #f0e6fa;
+    }
+
+    .jobs-table th {
+        background: linear-gradient(90deg, #f5e6ff 0%, #ffe6f5 100%);
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #7c2ae8;
+        letter-spacing: 0.5px;
+    }
+
+    .jobs-table tr:nth-child(even) {
+        background-color: #f7f2fa;
+    }
+
+    .jobs-table tr:hover {
+        background-color: #f3eaff;
+        transition: background 0.2s;
+    }
+
+    .jobs-table tr:last-child td {
+        border-bottom: none;
+    }
+
+@media (max-width: 700px) {
+    .jobs-section {
+        padding: 1.2rem 0.5rem;
+    }
+
+    .jobs-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .add-job-btn {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+
+    .table-container {
+        padding: 0.5rem 0.2rem;
+    }
+
+    .jobs-table th, .jobs-table td {
+        padding: 10px 6px;
+        font-size: 0.98rem;
+    }
+}
