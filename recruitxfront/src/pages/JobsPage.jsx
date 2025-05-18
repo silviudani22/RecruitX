@@ -59,6 +59,13 @@ function JobsPage() {
                     </div>
                 </div>
                 <div className="auth-buttons">
+
+                    <button className="jobs-btn" onClick={() => navigate("/account")}>
+                        MyAccount
+                    </button>
+                    <button className="jobs-btn" onClick={() => navigate("/info")}>
+                        Info
+                    </button>
                     <button className="jobs-btn" onClick={() => navigate("/about")}>
                         About
                     </button>

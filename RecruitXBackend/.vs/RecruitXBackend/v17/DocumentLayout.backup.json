@@ -3,62 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\controllers\\listedjobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\controllers\\listedjobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\listedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\listedjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\controllers\\listedjobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\controllers\\listedjobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\models\\listedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\listedjobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Migrations\\20250515214719_Create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RecruitXBackend\\Migrations\\20250515214719_Create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\data\\recruitxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\data\\recruitxcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\models\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\companydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\models\\domain\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\models\\domain\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\recruitxbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\recruitxbackend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\recruitxbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\recruitxbackend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|c:\\users\\silviu\\desktop\\recruitxfull\\recruitx\\recruitxbackend\\recruitxbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6417DE46-F1FC-4987-B54E-576A4D19DFA5}|RecruitXBackend\\RecruitXBackend.csproj|solutionrelative:recruitxbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\UserController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ListedJob.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Models\\Domain\\ListedJob.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
-              "RelativeToolTip": "RecruitXBackend\\Models\\Domain\\ListedJob.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:53:36.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ListedJobController.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\ListedJobController.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Controllers\\ListedJobController.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\ListedJobController.cs",
-              "RelativeToolTip": "RecruitXBackend\\Controllers\\ListedJobController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowAkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T18:26:04.972Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -110,164 +42,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ListedJob.cs",
+              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
+              "RelativeDocumentMoniker": "RecruitXBackend\\Models\\Domain\\ListedJob.cs",
+              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\ListedJob.cs",
+              "RelativeToolTip": "RecruitXBackend\\Models\\Domain\\ListedJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:53:36.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListedJobController.cs",
+              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\ListedJobController.cs",
+              "RelativeDocumentMoniker": "RecruitXBackend\\Controllers\\ListedJobController.cs",
+              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\ListedJobController.cs",
+              "RelativeToolTip": "RecruitXBackend\\Controllers\\ListedJobController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwCoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T18:26:04.972Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ListedJobDto.cs",
               "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\ListedJobDto.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Models\\ListedJobDto.cs",
               "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\ListedJobDto.cs",
               "RelativeToolTip": "RecruitXBackend\\Models\\ListedJobDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T11:45:44.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-12T11:45:44.156Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\LoginDto.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Models\\LoginDto.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\LoginDto.cs",
-              "RelativeToolTip": "RecruitXBackend\\Models\\LoginDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T18:03:41.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250515214719_Create.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Migrations\\20250515214719_Create.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Migrations\\20250515214719_Create.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Migrations\\20250515214719_Create.cs",
-              "RelativeToolTip": "RecruitXBackend\\Migrations\\20250515214719_Create.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T21:47:19.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CompanyDto.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\CompanyDto.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Models\\CompanyDto.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\CompanyDto.cs",
-              "RelativeToolTip": "RecruitXBackend\\Models\\CompanyDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T18:19:46.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "RecruitXContext.cs",
               "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitXContext.cs",
               "RelativeDocumentMoniker": "RecruitXBackend\\Data\\RecruitXContext.cs",
               "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitXContext.cs",
               "RelativeToolTip": "RecruitXBackend\\Data\\RecruitXContext.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwBMAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T11:40:00.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Login.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Models\\Domain\\Login.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Models\\Domain\\Login.cs",
-              "RelativeToolTip": "RecruitXBackend\\Models\\Domain\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T18:03:34.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RecruitXBackend.csproj",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
-              "RelativeDocumentMoniker": "RecruitXBackend\\RecruitXBackend.csproj",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.csproj",
-              "RelativeToolTip": "RecruitXBackend\\RecruitXBackend.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-10T17:25:41.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RecruitXBackend.http",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.http",
-              "RelativeDocumentMoniker": "RecruitXBackend\\RecruitXBackend.http",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\RecruitXBackend.http",
-              "RelativeToolTip": "RecruitXBackend\\RecruitXBackend.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-05-15T17:23:40.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Program.cs",
-              "RelativeDocumentMoniker": "RecruitXBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Program.cs",
-              "RelativeToolTip": "RecruitXBackend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:36:55.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "RecruitXBackend\\appsettings.json",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.json",
-              "RelativeToolTip": "RecruitXBackend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-10T17:26:46.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RecruitX.cs",
-              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitX.cs",
-              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Data\\RecruitX.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:28:11.862Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "RecruitXBackend\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\Silviu\\Desktop\\recruitxFull\\RecruitX\\RecruitXBackend\\RecruitXBackend\\appsettings.Development.json",
-              "RelativeToolTip": "RecruitXBackend\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-10T18:02:21.13Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\RecruitX2.0\\RecruitX\\RecruitXBackend\\RecruitXBackend\\Controllers\\UserController.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-09T15:28:39.917Z"
+              "WhenOpened": "2025-05-12T11:40:00.328Z"
             }
           ]
         }

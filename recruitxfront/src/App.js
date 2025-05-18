@@ -10,6 +10,7 @@ import InfoPage from "./pages/InfoPage"
 import AboutUsPage from "./pages/AboutUsPage" 
 import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MyAccount from "./pages/MyAccount"
 
 function App() {
   const [currentPage, setCurrentPage] = useState("welcome")
@@ -22,6 +23,7 @@ function App() {
             <Route path="/jobs" element={<JobsPage/> }/>
             <Route path="/info" element={<InfoPage/> }/>
             <Route path="/about" element={<AboutUsPage/> }/>
+            <Route path="/account" element={<MyAccount/> }/>
             <Route path="*" element={<WelcomePage/> }/>
         </Routes>
         //<JobsPage></JobsPage>
