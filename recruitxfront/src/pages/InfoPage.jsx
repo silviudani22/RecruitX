@@ -32,10 +32,6 @@ function InfoPage() {
                 </div>
                 <div className="auth-buttons">
                     <div className="auth-buttons">
-                        <button className="jobs-btn" onClick={() => navigate("/welcome")} title="Notifications">
-                            🔔
-                        </button>
-
                         <button className="jobs-btn" onClick={() => navigate("/account")}>
                             MyAccount
                         </button>
