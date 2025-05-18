@@ -8,6 +8,7 @@ import HomePage from "./pages/HomePage"
 import JobsPage from "./pages/JobsPage" 
 import InfoPage from "./pages/InfoPage" 
 import AboutUsPage from "./pages/AboutUsPage" 
+import MyAccount from "./pages/MyAccount";
 import "./App.css"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -21,7 +22,8 @@ function App() {
             <Route path="/home" element={<HomePage/> }/>
             <Route path="/jobs" element={<JobsPage/> }/>
             <Route path="/info" element={<InfoPage/> }/>
-            <Route path="/about" element={<AboutUsPage/> }/>
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/account" element={<MyAccount />} />
             <Route path="*" element={<WelcomePage/> }/>
         </Routes>
         //<JobsPage></JobsPage>

@@ -38,7 +38,9 @@ function InfoPage() {
                         <button className="jobs-btn" onClick={() => navigate("/home")}>
                             Home
                         </button>
-
+                        <button className="jobs-btn" onClick={() => navigate("/account")}>
+                            My Account
+                        </button>
                     </div>
                 </div>
             </nav>

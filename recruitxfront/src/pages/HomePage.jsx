@@ -22,6 +22,9 @@ function HomePage() {
                     <button className="jobs-btn" onClick={() => navigate("/about")}>
                         About
                     </button>
+                    <button className="jobs-btn" onClick={() => navigate("/account")}>
+                        My Account
+                    </button>
                     <button className="jobs-btn" onClick={() => navigate("/welcome")}>
                         LogOut
                     </button>

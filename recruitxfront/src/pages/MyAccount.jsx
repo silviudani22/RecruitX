@@ -1,26 +1,26 @@
 ﻿import "../styles/MyAccount.css";
 import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
 
 function MyAccount() {
     const navigate = useNavigate();
     const [userData, setUserData] = useState(null);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
 
     useEffect(() => {
-        // Înlocuiește URL-ul
-        axios.get("https://exemplu-api.com/api/user")
-            .then(response => {
-                setUserData(response.data);
-                setLoading(false);
-            })
-            .catch(error => {
-                console.error("Eroare la preluarea datelor:", error);
-                setError("Nu s-au putut încărca datele.");
-                setLoading(false);
-            });
+        const UserData = {
+            lastName: "Popescu",
+            firstName: "Ion",
+            email: "ion.popescu@example.com",
+            username: "ionpopescu1",
+            nickname: "Ionutz",
+            avatar: "/Avatar.jpg"
+        };
+
+        setTimeout(() => {
+            setUserData(UserData);
+            setLoading(false);
+        }, 2000);
     }, []);
 
     return (
@@ -42,17 +42,16 @@ function MyAccount() {
                 <div className="account-details-container">
                     {loading ? (
                         <p>Se încarcă datele...</p>
-                    ) : error ? (
-                        <p>{error}</p>
                     ) : (
                         <>
-                            <img
-                                src={userData.avatar || "https://via.placeholder.com/150"}
-                                alt="Avatar utilizator"
-                                className="account-avatar"
-                            />
-                            <h2 className="account-name">{userData.nume} {userData.prenume}</h2>
-                            <p className="account-email">{userData.email}</p>
+                                <img
+                                    src={userData.avatar}
+                                    alt="Avatar utilizator"
+                                    className="account-avatar"
+                                />
+                                <h2 className="account-name">{userData.lastName} {userData.firstName}</h2>
+                                <h3 className="account-user">{"(" + userData.nickname + ")"}</h3>
+                                <p className="account-email">{userData.email}</p>
                         </>
                     )}
                 </div>

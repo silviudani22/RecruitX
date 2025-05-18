@@ -43,6 +43,7 @@ function AboutUsPage() {
                     <button className="jobs-btn" onClick={() => navigate("/jobs")}>Jobs</button>
                     <button className="jobs-btn" onClick={() => navigate("/info")}>Info</button>
                     <button className="jobs-btn" onClick={() => navigate("/home")}>Home</button>
+                    <button className="jobs-btn" onClick={() => navigate("/account")}>My Account</button>
                 </div>
             </nav>
             <main className="home-content">
