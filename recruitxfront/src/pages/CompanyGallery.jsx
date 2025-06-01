@@ -21,13 +21,13 @@ const companies = [
         name: 'Endava',
         image: 'p3.jpg',
         description: 'Cluj, Romania'
-    } ,   
+    },
     {
         id: 4,
         name: 'Bitdefender',
         image: 'p4.jpg',
         description: 'Cluj, Romania'
-    },    
+    },
     {
         id: 5,
         name: 'IBM',

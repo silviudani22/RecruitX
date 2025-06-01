@@ -1,8 +1,13 @@
 import "../styles/HomePage.css"
 import CompanyGallery from "./CompanyGallery"
 import { useNavigate } from "react-router-dom";
-function HomePage() { 
+function HomePage() {
     const navigate = useNavigate();
+    const userRole = JSON.parse(localStorage.getItem("user")).role;
+    
+    const isUser = userRole === "user";
+    const isCompany = userRole === "company";
+
     return (
         <div className="home-page">
             <nav className="navbar">
@@ -13,15 +18,19 @@ function HomePage() {
                 </div>
 
                 <div className="auth-buttons">
-                    <button className="jobs-btn" onClick={()=>navigate("/jobs")}>
+                    {isCompany && <button className="jobs-btn" onClick={() => navigate("/companies")}>
+                        Companies
+                    </button>}
+                     < button className="jobs-btn" onClick={() =>
+                        navigate("/jobs")}>
                         Jobs
                     </button>
                     <button className="jobs-btn" onClick={() => navigate("/account")}>
                         MyAccount
                     </button>
-                    <button className="jobs-btn" onClick={() => navigate("/info")}>
+                    {isUser && <button className="jobs-btn" onClick={() => navigate("/info")}>
                         Info
-                    </button>
+                    </button>}
                     <button className="jobs-btn" onClick={() => navigate("/about")}>
                         About
                     </button>
@@ -30,12 +39,12 @@ function HomePage() {
                     </button>
                 </div>
 
-               
+
             </nav>
 
             <main className="home-content">
-                
-            <CompanyGallery></CompanyGallery>
+
+                <CompanyGallery></CompanyGallery>
             </main>
         </div>
     )

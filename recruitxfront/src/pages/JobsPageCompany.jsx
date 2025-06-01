@@ -5,15 +5,12 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import JobModal from "./JobModal";
 
-function JobsPage() {
+function JobsPageCompany() {
     const navigate = useNavigate();
     const [jobs, setJobs] = useState([]);
     const [loading, setLoading] = useState(true);
     const [showModal, setShowModal] = useState(false);
 
-    const userRole = JSON.parse(localStorage.getItem("user")).role;
-    const isUser = userRole === "user";
-    const isCompany = userRole === "company";
 
     const userId = Number(localStorage.getItem('userId'));
 
@@ -88,17 +85,18 @@ function JobsPage() {
                     </div>
                 </div>
                 <div className="auth-buttons">
-                    {isCompany && <button className="jobs-btn" onClick={() => navigate("/companies")}>
-                        Companies
-                    </button>}
+
                     <button className="jobs-btn" onClick={() => navigate("/account")}>
                         MyAccount
                     </button>
-                    {isUser && <button className="jobs-btn" onClick={() => navigate("/info")}>
+                    <button className="jobs-btn" onClick={() => navigate("/info")}>
                         Info
-                    </button>}
+                    </button>
                     <button className="jobs-btn" onClick={() => navigate("/about")}>
                         About
+                    </button>
+                    <button className="jobs-btn" onClick={() => navigate("/info")}>
+                        Info
                     </button>
                     <button className="jobs-btn" onClick={() => navigate("/home")}>
                         Home
@@ -110,9 +108,9 @@ function JobsPage() {
                 <div className="jobs-section">
                     <div className="jobs-header">
                         <h1>Available Jobs</h1>
-                        {isCompany && <button className="add-job-btn" onClick={() => setShowModal(true)}>
+                        <button className="add-job-btn" onClick={() => setShowModal(true)}>
                             + Add Job
-                        </button>}
+                        </button>
                     </div>
                     {showModal && (
                         <JobModal
@@ -132,7 +130,7 @@ function JobsPage() {
                                         <th>Experience</th>
                                         <th>Work Mode</th>
                                         <th>Schedule</th>
-                                            {isUser && <th>Apply</th>}
+                                        <th>Apply</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -144,12 +142,12 @@ function JobsPage() {
                                             <td>{job.flexibility}</td>
                                             <td>{job.program}</td>
                                             <td>
-                                                {isUser && <button
+                                                <button
                                                     className="apply-btn"
                                                     onClick={() => applyToJob(job.id)}
                                                 >
                                                     Apply
-                                                </button>}
+                                                </button>
                                             </td>
                                         </tr>
                                     ))}
@@ -163,4 +161,4 @@ function JobsPage() {
     );
 }
 
-export default JobsPage;
+export default JobsPageCompany;

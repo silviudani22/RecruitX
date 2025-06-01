@@ -8,6 +8,10 @@ function AboutUsPage() {
 
     const aboutRef = useRef(null);
     const imageContainerRef = useRef(null);
+    const userRole = JSON.parse(localStorage.getItem("user")).role;
+
+    const isUser = userRole === "user";
+    const isCompany = userRole === "company";
 
     useEffect(() => {
         const img = new Image();
@@ -17,7 +21,7 @@ function AboutUsPage() {
         const updateHeight = () => {
             if (aboutRef.current && imageContainerRef.current) {
                 const aboutHeight = aboutRef.current.offsetHeight;
-                imageContainerRef.current.style.height = `${ aboutHeight } px`;
+                imageContainerRef.current.style.height = `${aboutHeight} px`;
             }
         };
 
@@ -40,10 +44,16 @@ function AboutUsPage() {
                     </div>
                 </div>
                 <div className="auth-buttons">
+                    {isCompany && <button className="jobs-btn" onClick={() => navigate("/companies")}>
+                        Companies
+                    </button>}
                     <button className="jobs-btn" onClick={() => navigate("/jobs")}>Jobs</button>
-                    <button className="jobs-btn" onClick={() => navigate("/info")}>Info</button>
-                    <button className="jobs-btn" onClick={() => navigate("/home")}>Home</button>
+                    {isUser && <button className="jobs-btn" onClick={() => navigate("/info")}>
+                        Info
+                    </button>}
                     <button className="jobs-btn" onClick={() => navigate("/account")}>My Account</button>
+                    <button className="jobs-btn" onClick={() => navigate("/home")}>Home</button>
+
                 </div>
             </nav>
             <main className="home-content">

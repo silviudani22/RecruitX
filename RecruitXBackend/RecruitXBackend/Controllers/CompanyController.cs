@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using RecruitXBackend.Data;
 using RecruitXBackend.Models.Domain;
 
@@ -40,6 +39,7 @@ namespace RecruitXBackend.Controllers
             var com = new Company
             {
                 name = companyDto.name,
+                email = companyDto.email, // <-- asigură-te că primești și salvezi email-ul!
                 domain = companyDto.domain,
                 location = companyDto.location,
             };

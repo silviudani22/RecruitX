@@ -18,6 +18,17 @@ public class UsersController : ControllerBase
     [HttpPost("signup")]
     public IActionResult SignUp(UserDto userDto)
     {
+        // VALIDARE EMAIL
+        if (string.IsNullOrWhiteSpace(userDto.email) || !userDto.email.Contains("@"))
+        {
+            return BadRequest("Adauga un email valid");
+        }
+        // VALIDARE PAROLĂ
+        if (string.IsNullOrWhiteSpace(userDto.password) || userDto.password.Length < 8 || !userDto.password.Any(char.IsUpper))
+        {
+            return BadRequest("Parola trebuie să aibă minim 8 caractere și o literă mare!");
+        }
+
         // Verifică dacă utilizatorul există deja
         var existingUser = context.Users.FirstOrDefault(u => u.email == userDto.email || u.username == userDto.username);
         if (existingUser != null)
@@ -29,7 +40,8 @@ public class UsersController : ControllerBase
         {
             username = userDto.username,
             email = userDto.email,
-            password = userDto.password, 
+            password = userDto.password,
+            role = userDto.role,
             lastName = userDto.lastName,
             firstName = userDto.firstName
         };
@@ -67,7 +79,7 @@ public class UsersController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetUser(string id) // Schimbat din int în string
+    public async Task<IActionResult> GetUser(int id) // Schimbat din int în string
     {
         var user = context.Users.Find(id);
         if (user == null) return NotFound();
@@ -83,6 +95,7 @@ public class UsersController : ControllerBase
             username = userDto.username,
             email = userDto.email,
             password = userDto.password,
+            role = userDto.role,
             lastName = userDto.lastName,
             firstName = userDto.firstName
         };
@@ -98,9 +111,36 @@ public class UsersController : ControllerBase
         var user = context.Users.Find(id);
         if (user == null) return NotFound();
 
-       context.Users.Remove(user);
+        context.Users.Remove(user);
         context.SaveChanges();
 
         return Ok();
+    }
+
+    [HttpPut("{id}")]
+    public IActionResult UpdateUser(int id, [FromBody] UserUpdateDto dto)
+    {
+        var user = context.Users.FirstOrDefault(u => u.id == id);
+        if (user == null) return NotFound();
+
+        user.firstName = dto.firstName;
+        user.lastName = dto.lastName;
+        user.email = dto.email;
+        context.SaveChanges();
+        return Ok(user);
+    }
+
+    [HttpPost("{id}/changepassword")]
+    public IActionResult ChangePassword(int id, [FromBody] ChangePasswordDto dto)
+    {
+        var user = context.Users.FirstOrDefault(u => u.id == id);
+        if (user == null) return NotFound();
+
+        if (user.password != dto.oldPassword) // În producție: hash!
+            return BadRequest(new { message = "Parola veche este greșită!" });
+
+        user.password = dto.newPassword; // În producție: hash!
+        context.SaveChanges();
+        return Ok(new { message = "Parola a fost schimbată!" });
     }
 }

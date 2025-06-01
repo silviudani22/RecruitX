@@ -289,3 +289,20 @@ h1 {
     cursor: pointer;
     transition: all 0.2s ease;
 }
+
+.delete-btn {
+    margin-top: 10px;
+    background: #ff6666;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+    .delete-btn:hover {
+        background: #ff2222;
+        transform: scale(1.04);
+    }

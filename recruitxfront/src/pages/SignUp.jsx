@@ -6,6 +6,10 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 function SignUp() {
     const navigate = useNavigate();
+    const validateEmail = (email) => email.includes("@");
+    const validatePassword = (password) =>
+        password.length >= 8 && /[A-Z]/.test(password);
+
     const handleSave = async (e) => {
         e.preventDefault();
 
@@ -13,15 +17,25 @@ function SignUp() {
             username: document.getElementById("userName").value,
             email: document.getElementById("email").value,
             password: document.getElementById("password").value,
+            role: document.querySelector('input[name="role"]:checked').value,
             firstName: document.getElementById("firstName").value,
             lastName: document.getElementById("LastName").value,
         };
 
+        // VALIDARE
+        if (!validateEmail(userData.email)) {
+            alert("Emailul trebuie să conțină @");
+            return;
+        }
+        if (!validatePassword(userData.password)) {
+            alert("Parola trebuie să aibă minim 8 caractere și o literă mare!");
+            return;
+        }
+
         try {
             const response = await axios.post("http://localhost:5054/api/users/signup", userData);
             alert(response.data.message);
-            // Redirect către login sau dashboard
-            onLoginClick();
+            navigate("/login");
         } catch (error) {
             alert(error.response?.data || "Signup failed.");
         }
@@ -79,6 +93,32 @@ function SignUp() {
                                     <label htmlFor="password">Password</label>
                                     <input type="password" id="password" placeholder="Create a password" required />
                                 </div>
+                                <div className="form-group">
+                                    <label>Role</label>
+                                    <div className="role-options">
+                                        <label className="role-radio">
+                                            <input
+                                                type="radio"
+                                                name="role"
+                                                value="user"
+                                                id="role-user"
+                                                defaultChecked
+                                            />
+                                            <span className="custom-radio"></span>
+                                            <span style={{ marginLeft: 8 }}>User</span>
+                                        </label>
+                                        <label className="role-radio">
+                                            <input
+                                                type="radio"
+                                                name="role"
+                                                value="company"
+                                                id="role-company"
+                                            />
+                                            <span className="custom-radio"></span>
+                                            <span style={{ marginLeft: 8 }}>Company</span>
+                                        </label>
+                                    </div>
+                                </div>
                                 <button type="submit" className="primary-btn" onClick={handleSave}>
                                     Sign Up
                                 </button>
@@ -88,7 +128,7 @@ function SignUp() {
                         <div className="auth-switch">
                             <p>
                                 Already have an account?{" "}
-                                <button onClick={()=>navigate("/login")} className="switch-link">
+                                <button onClick={() => navigate("/login")} className="switch-link">
                                     Log In
                                 </button>
                             </p>

@@ -1,15 +1,27 @@
 ﻿import "../styles/InfoPage.css"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 
 function InfoPage() {
     const navigate = useNavigate();
-    const appliedJobs = [
-        { id: 1, title: "Frontend Developer", company: "Tech Corp", date: "2025-03-06 17:45" },
-        { id: 2, title: "Backend Engineer", company: "Codeify", date: "2025-02-16 12:03" },
-        { id: 3, title: "DevOps Specialist", company: "CloudNet", date: "2025-03-02 10:47" },
-        { id: 4, title: "Frontend Developer For Page Navigations", company: "Life Is Hard", date: "2024-06-15 15:21" },
-    ];
+    const [appliedJobs, setAppliedJobs] = useState([]);
+    const userId = localStorage.getItem('userId');
+
+    useEffect(() => {
+        if (!userId) {
+            navigate("/login");
+        }
+    }, [userId, navigate]);
+
+    useEffect(() => {
+        if (!userId) return;
+        fetch(`http://localhost:5054/api/jobapplication/user/${userId}`)
+            .then(res => res.json())
+            .then(data => {
+                setAppliedJobs(data);
+                console.log(data);
+            });
+    }, [userId]);
 
     // Fixed to always have 4 jobs per column
     const groupJobsIntoColumns = (jobs, jobsPerColumn = 4) => {
@@ -19,6 +31,20 @@ function InfoPage() {
         }
         return columns;
     };
+
+    const handleDelete = async (applicationId) => {
+        if (!window.confirm('Sigur vrei să retragi această aplicație?')) return;
+        const res = await fetch(`http://localhost:5054/api/jobapplication/${applicationId}`, {
+            method: 'DELETE',
+        });
+        if (res.ok) {
+            setAppliedJobs(prev => prev.filter(app => app.applicationId !== applicationId));
+            alert("Aplicație retrasă cu succes!");
+        } else {
+            alert("Eroare la retragere!");
+        }
+    };
+
 
     const jobColumns = groupJobsIntoColumns(appliedJobs);
 
@@ -35,7 +61,7 @@ function InfoPage() {
                         <button className="jobs-btn" onClick={() => navigate("/account")}>
                             MyAccount
                         </button>
-                        <button className="jobs-btn" onClick={()=>navigate("/jobs")}>
+                        <button className="jobs-btn" onClick={() => navigate("/jobs")}>
                             Jobs
                         </button>
                         <button className="jobs-btn" onClick={() => navigate("/about")}>
@@ -60,10 +86,16 @@ function InfoPage() {
                                 {jobColumns.map((column, columnIndex) => (
                                     <div className="job-column" key={columnIndex}>
                                         {column.map((job) => (
-                                            <div className="job-card" key={job.id}>
-                                                <h3>{job.title}</h3>
-                                                <p>Company: <em>{job.company}</em></p>
-                                                <p>Date of application: <em>{job.date}</em></p>
+                                            <div className="job-card" key={job.ApplicationId}>
+                                                <h3>{job.jobTitle}</h3>
+                                                <p>Company: <em>{job.companyName}</em></p>
+                                                <p>Date of application: <em>{new Date(job.applicationDate).toLocaleString()}</em></p>
+                                                <button
+                                                    className="delete-btn"
+                                                    onClick={() => handleDelete(job.applicationId)}
+                                                >
+                                                    Remove
+                                                </button>
                                             </div>
                                         ))}
                                     </div>

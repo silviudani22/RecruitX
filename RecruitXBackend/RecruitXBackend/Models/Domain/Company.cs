@@ -7,6 +7,7 @@ namespace RecruitXBackend.Models.Domain
         [Key]
         public int id { set; get; }
         public string name { set; get; }
+        public string email { set; get; }
         public string domain { set; get; }
         public string location { set; get; }
 

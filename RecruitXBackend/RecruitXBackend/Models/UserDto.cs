@@ -9,6 +9,7 @@ namespace RecruitXBackend.Models
         public string email { set; get; }
         [Required]
         public string password { set; get; }
+        public string role { set; get; }
         public string lastName { set; get; }
         public string firstName { set; get; }
     }

@@ -16,12 +16,13 @@ function Login() {
         try {
             const response = await axios.post("http://localhost:5054/api/users/login", loginData);
             localStorage.setItem('user', JSON.stringify(response.data.user));
+            localStorage.setItem('userId', response.data.user.id);
             navigate("/home");
-          
+
         } catch (error) {
             alert(error.response?.data || "Login failed.");
         }
-       
+
     };
     return (
         <div className="login-page">
@@ -53,7 +54,7 @@ function Login() {
                     <h1>Welcome Back</h1>
                     <p className="subtitle">Log in to access your RecruitX account</p>
 
-                    <div className="auth-form" onSubmit={handleLogin }>
+                    <div className="auth-form" onSubmit={handleLogin}>
                         <form className="login-form" >
                             <div className="form-group">
                                 <label htmlFor="username">Email</label>

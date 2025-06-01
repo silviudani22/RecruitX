@@ -39,11 +39,20 @@ namespace RecruitXBackend.Controllers
         [HttpPost]
         public IActionResult CreateApplication(JobApplicationDto jobApplicationDto)
         {
+            // Verifică dacă există deja aplicația pentru user + job
+            bool alreadyApplied = context.JobApplications.Any(a =>
+                a.userId == jobApplicationDto.userId && a.jobId == jobApplicationDto.jobId);
+
+            if (alreadyApplied)
+            {
+                return Conflict(new { message = "You have already applied to this job." });
+            }
+
             var appl = new JobApplication
             {
                 userId = jobApplicationDto.userId,
                 jobId = jobApplicationDto.jobId,
-                applicationDate = jobApplicationDto.applicationDate,
+                applicationDate = DateTime.UtcNow,
             };
             context.JobApplications.Add(appl);
             context.SaveChanges();
@@ -63,6 +72,29 @@ namespace RecruitXBackend.Controllers
             context.SaveChanges();
 
             return Ok();
+        }
+
+        [HttpGet("user/{userId}")]
+        public IActionResult GetApplicationsForUser(int userId)
+        {
+            var appls = context.JobApplications
+        .Where(a => a.userId == userId)
+        .Join(
+            context.ListedJobs,
+            app => app.jobId,
+            job => job.id,
+            (app, job) => new JobApplicationWithJobInfoDto
+            {
+                ApplicationId = app.id,
+                JobId = job.id,
+                ApplicationDate = app.applicationDate,
+                JobTitle = job.title,
+                CompanyName = job.companyName
+            })
+        .OrderByDescending(a => a.ApplicationDate)
+        .ToList();
+
+            return Ok(appls);
         }
     }
 }

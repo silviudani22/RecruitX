@@ -44,7 +44,6 @@
 
 
 .jobs-btn {
-    
     background: linear-gradient(135deg, #8a2be2, #ff69b4);
     color: white;
     border: none;
@@ -136,6 +135,7 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
 .hero-section {
     background-attachment: fixed;
     background-position: center;

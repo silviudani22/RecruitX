@@ -8,7 +8,8 @@ const JobModal = ({ onClose, onSave }) => {
         experienceNeeded: "",
         flexibility: "",
         program: "",
-        Companyid: ""
+        Companyid: "",
+        title: ""
     });
 
     const handleChange = (e) => {
@@ -36,6 +37,7 @@ const JobModal = ({ onClose, onSave }) => {
                     <input name="flexibility" placeholder="Work Mode" value={form.flexibility} onChange={handleChange} required />
                     <input name="program" placeholder="Schedule" value={form.program} onChange={handleChange} required />
                     <input name="Companyid" placeholder="Company ID" value={form.Companyid} onChange={handleChange} required />
+                    <input name="title" placeholder="Job Title" value={form.title} onChange={handleChange} required />
                     <div className="modal-actions">
                         <button type="submit">Save</button>
                         <button type="button" onClick={onClose}>Cancel</button>

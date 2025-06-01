@@ -9,6 +9,7 @@ namespace RecruitXBackend.Models.Domain
         [Key]
         public int id { get; set; }
         public string companyName { get; set; }
+        public string title { get; set; }
         public string technology { get; set; }
         public string experienceNeeded { get; set; }
         public string flexibility { get; set; }

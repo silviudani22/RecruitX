@@ -1,229 +1,107 @@
-.my_account {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-	font-family: "Inter", sans-serif;
-	background-color: #f8f9fa;
-}
-
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1.5rem 2rem;
-	background-color: white;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-}
-
-.logo-container {
-	display: flex;
-	align-items: center;
-}
-
-.logo {
-	position: relative;
-	display: flex;
-	align-items: center;
-	font-weight: 800;
-	font-size: 1.8rem;
-}
-
-.logo-text {
-	background: linear-gradient(135deg, #8a2be2, #ff69b4);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	position: relative;
-	z-index: 1;
-}
-
-.auth-buttons {
-	display: flex;
-	gap: 1rem;
-}
-
-
-.jobs-btn {
-	padding: 0.7rem 1.5rem;
-	background: linear-gradient(135deg, #8a2be2, #ff69b4);
-	color: white;
-	border: none;
-	border-radius: 4px;
-	font-weight: 500;
-	cursor: pointer;
-	transition: all 0.2s ease;
-}
-
-	.jobs-btn:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
-	}
-
-.home-content {
-	display: flex;
-	flex: 1;
-	padding: 4rem 2rem;
-	max-width: 1200px;
-	margin: 0 auto;
-	align-items: center;
-}
-
-.hero-section {
-	flex: 1;
-}
-
-h1 {
-	font-size: 3.5rem;
-	font-weight: 800;
-	margin-bottom: 1.5rem;
-	line-height: 1.2;
-}
-
-.highlight {
-	background: linear-gradient(135deg, #8a2be2, #ff69b4);
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-}
-
-.subtitle {
-	font-size: 1.25rem;
-	color: #555;
-	margin-bottom: 2.5rem;
-}
-
-.cta-buttons {
-	display: flex;
-	gap: 1rem;
-}
-
-.primary-btn {
-	padding: 0.8rem 1.8rem;
-	border: none;
-	background: linear-gradient(135deg, #8a2be2, #ff69b4);
-	color: white;
-	border-radius: 4px;
-	font-weight: 600;
-	font-size: 1rem;
-	cursor: pointer;
-	transition: all 0.2s ease;
-}
-
-	.primary-btn:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
-	}
-
-.secondary-btn {
-	padding: 0.8rem 1.8rem;
-	background-color: transparent;
-	color: #8a2be2;
-	border: 1px solid #8a2be2;
-	border-radius: 4px;
-	font-weight: 500;
-	font-size: 1rem;
-	cursor: pointer;
-	transition: all 0.2s ease;
-}
-
-	.secondary-btn:hover {
-		background-color: rgba(138, 43, 226, 0.1);
-	}
-
-.hero-image {
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.image-placeholder {
-	width: 400px;
-	height: 400px;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.gradient-circle {
-	width: 300px;
-	height: 300px;
-	background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(255, 105, 180, 0.2));
-	border-radius: 50%;
-	position: relative;
-	overflow: hidden;
-}
-
-	.gradient-circle::before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		height: 80%;
-		background: linear-gradient(135deg, #8a2be2, #ff69b4);
-		border-radius: 50%;
-		opacity: 0.7;
-	}
-
-@media (max-width: 768px) {
-	.welcome-content {
-		flex-direction: column;
-		text-align: center;
-		padding: 2rem 1rem;
-	}
-
-	.hero-section {
-		margin-bottom: 2rem;
-	}
-
-	h1 {
-		font-size: 2.5rem;
-	}
-
-	.hero-image {
-		display: none;
-	}
-}
-
 .account-details-container {
 	background-color: white;
-	padding: 2rem;
+	padding: 2rem 2.2rem;
 	max-width: 420px;
 	width: 100%;
 	margin: 3rem auto;
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(138, 43, 226, 0.08);
+	border-radius: 14px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 1rem;
-}
-
-.account-avatar {
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-	border-radius: 8px;
-	border: 2px solid #8a2be2;
+	gap: 1.4rem;
 }
 
 .account-name {
-	font-size: 1.8rem;
-	font-weight: 700;
+	font-size: 2.2rem;
+	font-weight: 800;
+	letter-spacing: 0.02em;
 	color: #222;
+	margin: 0.6rem 0 0.2rem 0;
+	background: linear-gradient(135deg, #8a2be2 50%, #ff69b4 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
 
 .account-email {
-	font-size: 1.1rem;
-	color: #555;
+	font-size: 1.15rem;
+	color: #8a2be2;
+	font-weight: 500;
 	word-break: break-word;
+	margin-bottom: 1.3rem;
 }
 
-.account-nickname {
+.account-btn {
+	padding: 0.65rem 1.4rem;
+	border: none;
+	border-radius: 6px;
+	background: linear-gradient(135deg, #8a2be2 60%, #ff69b4 100%);
+	color: #fff;
+	font-weight: 600;
 	font-size: 1.1rem;
-	  color:   #555;
+	cursor: pointer;
+	margin: 8px 10px 0 0;
+	transition: background 0.2s, transform 0.13s, box-shadow 0.2s;
+	box-shadow: 0 3px 12px rgba(138, 43, 226, 0.07);
+}
+
+	.account-btn:hover {
+		background: linear-gradient(135deg, #ff69b4 70%, #8a2be2 100%);
+		transform: translateY(-2px) scale(1.04);
+		box-shadow: 0 5px 18px rgba(255, 105, 180, 0.11);
+	}
+
+input[type="text"], input[type="email"], input[type="password"] {
+	width: 80%;
+	padding: 8px 12px;
+	margin: 8px 0 12px 0;
+	border: 1.3px solid #e5e5ee;
+	border-radius: 6px;
+	font-size: 1.07rem;
+	transition: border 0.18s;
+}
+
+	input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+		border: 1.4px solid #8a2be2;
+		outline: none;
+	}
+
+.modal-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #0005;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999;
+}
+
+.modal {
+	background: #fff;
+	padding: 32px 28px;
+	border-radius: 14px;
+	min-width: 320px;
+	box-shadow: 0 0 18px #0003;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+	.account-details-container {
+		padding: 1.2rem 0.6rem;
+		margin: 1.3rem auto;
+	}
+
+	.account-name {
+		font-size: 1.3rem;
+	}
+
+	.account-btn {
+		font-size: 0.95rem;
+		padding: 0.55rem 1rem;
+	}
 }

@@ -4,24 +4,24 @@
     flex-direction: column;
     font-family: "Inter", sans-serif;
     background-color: #f8f9fa;
-  }
-  
-  /* Navbar styles */
-  .navbar {
+}
+
+/* Navbar styles */
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  .logo-container {
+}
+
+.logo-container {
     display: flex;
     align-items: center;
-  }
-  
-  .back-button {
+}
+
+.back-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,35 +33,35 @@
     height: 40px;
     border-radius: 50%;
     transition: all 0.2s ease;
-  }
-  
-  .back-button:hover {
-    background-color: rgba(138, 43, 226, 0.1);
-  }
-  
-  .back-button svg {
-    color: #8a2be2;
-  }
-  
-  .logo {
+}
+
+    .back-button:hover {
+        background-color: rgba(138, 43, 226, 0.1);
+    }
+
+    .back-button svg {
+        color: #8a2be2;
+    }
+
+.logo {
     position: relative;
     display: flex;
     align-items: center;
     font-weight: 800;
     font-size: 1.8rem;
-  }
-  
-  .logo-text {
+}
+
+.logo-text {
     background: linear-gradient(135deg, #8a2be2, #ff69b4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     position: relative;
     z-index: 1;
-  }
-  
-  /* Auth content */
-  .auth-content {
+}
+
+/* Auth content */
+.auth-content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -70,62 +70,62 @@
     max-width: 1200px;
     margin: 0 auto;
     min-height: calc(100vh - 90px);
-  }
-  
-  .auth-container {
+}
+
+.auth-container {
     flex: 1;
     max-width: 500px;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
     line-height: 1.2;
-  }
-  
-  .subtitle {
+}
+
+.subtitle {
     font-size: 1.25rem;
     color: #555;
     margin-bottom: 2.5rem;
-  }
-  
-  .auth-form {
+}
+
+.auth-form {
     margin-bottom: 2rem;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 1.5rem;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    color: #333;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    border: 1px solid #d1d5db;
-    border-radius: 4px;
-    font-size: 1rem;
-    transition: border-color 0.15s ease-in-out;
-  }
-  
-  .form-group input:focus {
-    outline: none;
-    border-color: #8a2be2;
-    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
-  }
-  
-  .forgot-password {
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: 1px solid #d1d5db;
+        border-radius: 4px;
+        font-size: 1rem;
+        transition: border-color 0.15s ease-in-out;
+    }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #8a2be2;
+            box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
+        }
+
+.forgot-password {
     text-align: right;
     margin-top: 0.5rem;
-  }
-  
-  .forgot-password-btn {
+}
+
+.forgot-password-btn {
     background: none;
     border: none;
     background: linear-gradient(135deg, #8a2be2, #ff69b4);
@@ -136,9 +136,9 @@
     font-size: 0.875rem;
     cursor: pointer;
     padding: 0;
-  }
-  
-  .primary-btn {
+}
+
+.primary-btn {
     width: 100%;
     padding: 0.8rem 1.8rem;
     border: none;
@@ -149,24 +149,24 @@
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.2s ease;
-  }
-  
-  .primary-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
-  }
-  
-  .auth-switch {
+}
+
+    .primary-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(138, 43, 226, 0.3);
+    }
+
+.auth-switch {
     text-align: center;
     margin-top: 1.5rem;
-  }
-  
-  .auth-switch p {
-    color: #555;
-    font-size: 0.95rem;
-  }
-  
-  .switch-link {
+}
+
+    .auth-switch p {
+        color: #555;
+        font-size: 0.95rem;
+    }
+
+.switch-link {
     background: none;
     border: none;
     background: linear-gradient(135deg, #8a2be2, #ff69b4);
@@ -178,70 +178,69 @@
     cursor: pointer;
     padding: 0;
     margin-left: 5px;
-  }
-  
-  /* Auth image */
-  .auth-image {
+}
+
+/* Auth image */
+.auth-image {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .image-placeholder {
+}
+
+.image-placeholder {
     width: 400px;
     height: 400px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .gradient-circle {
+}
+
+.gradient-circle {
     width: 300px;
     height: 300px;
     background: linear-gradient(135deg, rgba(138, 43, 226, 0.2), rgba(255, 105, 180, 0.2));
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-  }
-  
-  .gradient-circle::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background: linear-gradient(135deg, #8a2be2, #ff69b4);
-    border-radius: 50%;
-    opacity: 0.7;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
+}
+
+    .gradient-circle::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 80%;
+        background: linear-gradient(135deg, #8a2be2, #ff69b4);
+        border-radius: 50%;
+        opacity: 0.7;
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
     .auth-content {
-      flex-direction: column;
-      padding: 2rem 1rem;
+        flex-direction: column;
+        padding: 2rem 1rem;
     }
-  
+
     .auth-container {
-      width: 100%;
-      margin-bottom: 3rem;
+        width: 100%;
+        margin-bottom: 3rem;
     }
-  
+
     h1 {
-      font-size: 2.5rem;
-      text-align: center;
+        font-size: 2.5rem;
+        text-align: center;
     }
-  
+
     .subtitle {
-      text-align: center;
+        text-align: center;
     }
-  
+
     .auth-image {
-      display: none;
+        display: none;
     }
-  }
-  
+}
