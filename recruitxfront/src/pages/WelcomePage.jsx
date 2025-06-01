@@ -4,6 +4,7 @@ import "../styles/WelcomePage.css"
 import { useNavigate } from "react-router-dom";
 
 function WelcomePage({ onLoginClick, onSignupClick, onGetStartedClick }) {
+
     const navigate = useNavigate();
     return (
         <div className="welcome-page">
@@ -30,10 +31,9 @@ function WelcomePage({ onLoginClick, onSignupClick, onGetStartedClick }) {
                     </h1>
                     <p className="subtitle">The next generation recruitment platform</p>
                     <div className="cta-buttons">
-                        <button className="primary-btn" onClick={onGetStartedClick}>
+                        <button className="primary-btn" onClick={() => navigate("/signup")}>
                             Get Started
                         </button>
-                        <button className="secondary-btn">Learn More</button>
                     </div>
                 </div>
                 <div className="hero-image">
